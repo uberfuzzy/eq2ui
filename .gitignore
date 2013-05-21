@@ -1,8 +1,11 @@
+#EQ2map related files
+eq2ui_mainhud_map2.xml
 eq2map2/*
+POI/*
 images/maps/*
 images/eq2map.dds
-POI/*
-eq2ui_mainhud_map2.xml
 images/icons/icon_eq2map.dds
 images/icons/icon_eq2map2.dds
-disabled/eq2ui_loginscene.xml
+
+# its from disabled, but I want to ignore it both places, incase I bring it back
+eq2ui_loginscene.xml
