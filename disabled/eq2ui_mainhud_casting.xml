@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page DynamicData="/GameData.Spells.Window" DynamicDataFilter="0001" eq2usescomwndcontrols="true" MaximumSize="16384,30" MinimumSize="100,30" Name="Casting" PackLocation="center,bottom" ScrollExtent="320,30" Size="320,30" UserMovable="true" UserResizable="true">
+    <Page AbsorbsInput="false" DynamicData="/GameData.Spells.Failure" DynamicDataFilter="0001" Location="5,5" Name="CastingFailure" PackSize="absolute," ScrollExtent="310,20" Size="310,20" Visible="false">
+        <Text AbsorbsInput="false" DynamicData="/GameData.Spells.Failure" Font="/TextStyles.OnscreenMsg.OnscreenMsgStyle" Name="Text" PackSize="absolute," ScrollExtent="310,20" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="310,20" TextAlignment="Center" TextAlignmentVertical="Center">:8d7f373294c57d99:[DEVL]Interrupted!</Text>
+    </Page>
+    <Page AbsorbsInput="false" DynamicData="/GameData.Spells.Casting" DynamicDataFilter="0001" Location="5,5" Name="CastingProgress" PackSize="absolute," ScrollExtent="310,20" Size="310,20">
+        <Text AbsorbsInput="false" DynamicData="/GameData.Spells.Casting" Font="/TextStyles.Large.LargeStyle" Name="SpellName" PackSize="absolute," ScrollExtent="310,20" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="310,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:8d7f373223a09120:[DEVL]Fighting Chance</Text>
+        <Page Name="Progress" PackSize="absolute," ScrollExtent="310,20" Size="310,20">
+            <Image AbsorbsInput="false" Name="Bkg" PackSize="absolute," ScrollExtent="310,20" Size="310,20" SourceRect="0,0,308,20" SourceResource="/images/window_elements_hr.dds" />
+            <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#FFFF00" DynamicData="/GameData.Spells.Casting" Location="3,2" Name="Bar" PackSize="absolute," Progress="0.500" ScrollExtent="304,17" Size="304,17" Style="ProgressStyle" />
+            <Page BackgroundOpacity="1.000" Location="3,2" Name="BarBkg" PackSize="a," ScrollExtent="304,17" Size="304,17" />
+            <ProgressbarStyle Bar.Background="ProgressFill" Name="ProgressStyle" />
+            <ImageStyle Name="ProgressFill">
+                <ImageFrame Name="Image" Source="/images/window_elements_hr.dds" SourceRect="136,351,350,364" />
+            </ImageStyle>
+        </Page>
+    </Page>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="320,30" Size="320,30">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="320,30" Size="320,30" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="320,30" Size="320,30" />
+    </Page>
+</Page>

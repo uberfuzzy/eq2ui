@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Othesus Active Quest window with web search buttons 7/20/2007 GU36-->
+<Page DynamicData="/GameData.Quest.ActiveWindow" DynamicDataFilter="0001" eq2usescomwndcontrols="true" Location="768,5" MaximumSize="1024,1024" MinimumSize="250,109" Name="ActiveQuest" OnHoverIn="Buttons.Visible=true" OnHoverOut="Buttons.Visible=false" PackLocation="right,top" ScrollExtent="250,169" Size="250,169" UserMovable="true" UserResizable="true" version="1.1.0">
+  <Page AbsorbsInput="false" Location="6,147" Name="Buttons" PackLocation="nfn,fff" PackSize="a,f" ScrollExtent="216,16" Size="216,16" Visible="false">
+    <Namespace Name="Styles">
+      <DropdownboxStyle DropBy="150" Listbox.Style="ListboxStyle" Name="DropdownStyle" Normal.Background="NormalBackground" Normal.DownArrow="/imagelist.downarrow_normal" Padding="0,0,0,0" Scrollbar.Style="/ScrollStyles.default_vscroll"/>
+      <ListboxStyle GridStyle="GridStyle" Name="ListboxStyle"/>
+      <GridStyle Name="GridStyle" Normal.Background="NormalBackground" Normal.HBackground=" " Normal.Junction=" " Selected.Background="SelectedBackground"/>
+      <ImageStyle Filter="true" Name="NormalBackground">
+        <ImageFrame Name="DarkBlueBackground" Source="images/window_elements_specific.dds" SourceRect="36,273,163,289"/>
+      </ImageStyle>
+      <ImageStyle Filter="true" Name="SelectedBackground">
+        <ImageFrame Name="BlueBackground" Source="images/window_elements_specific.dds" SourceRect="36,291,163,307"/>
+      </ImageStyle>
+    </Namespace>
+    <Button LocalTooltip="Previous Quest" Name="LastButton" OnPress="questbrowser_prev" ScrollExtent="16,16" Size="16,16" Style="/ButtonStyles.tabscroll_right"></Button>
+    <Button LocalTooltip="Next Quest" Location="18,0" Name="NextButton" OnPress="questbrowser_next" ScrollExtent="16,16" Size="16,16" Style="/ButtonStyles.tabscroll_left"></Button>
+    <Dropdownbox LocalTooltip=":1c09d827cbfba817:Last Updated Quests" Location="36,0" MaximumSize="16384,16" MinimumSize="128,16" Name="LastUpdated" PackSize="a,f" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="128,16" Size="128,16" Style="Styles.DropdownStyle" Tooltip=":1c09d827cbfba817:Last Updated Quests"/>
+    <Image AbsorbsInput="false" Location="150,0" Name="DownArrowBG" PackLocation="fff,fff" ScrollExtent="14,16" Size="14,16" Style="Styles.NormalBackground"/>
+    <Button LocalTooltip="Search EQ2i" Location="166,0" Name="SearchEQ2i" OnPress="OthURIString='http://eq2.wikia.com/wiki/Special:fulltext=Search&amp;Search?search=' ## Parent.Parent.JournalsQuestDetail.QuestName.Text
+      browser OthURIString" PackLocation="fff" ScrollExtent="24,16" Size="24,16" Style="/ButtonStyles.find.style"></Button>
+    <Button LocalTooltip="Search Allakhazam" Location="192,0" Name="SearchAllakhazam" OnPress="OthURIString='http://eq2.allakhazam.com/db/questlist.html?quest_type=--+Not+Set+--&amp;levelmin=&amp;levelmax=&amp;sortby=--+Not+Set+--&amp;dosearch=1&amp;quest_name=' ## Parent.Parent.JournalsQuestDetail.QuestName.Text
+      browser OthURIString" PackLocation="fff" ScrollExtent="24,16" Size="24,16" Style="/ButtonStyles.find.style"></Button>
+  </Page>
+  <Page AbsorbsInput="false" DynamicData="/GameData.Quest.Update" DynamicDataFilter="0801" Location="6,7" Name="JournalUpdate" PackSize="a,a" ScrollExtent="238,156" Size="238,156" Visible="false">
+    <Text AbsorbsInput="false" DynamicData="/GameData.Quest.UpdateQuestName" Font="/TextStyles.Large.LargeStyle" LocalText=":1c09d8272c063c90:[DEVL]Update name that is a very very very very long" Margin="3,1,2,2" MaxLines="1" Name="QuestName" PackSize="absolute, fixed" ScrollExtent="488,22" ShadowStyle="/ShadowStylesNew.GreyscaleOutline.style" Size="238,22">:1c09d8272c063c90:[DEVL]Update name that is a very very very very long</Text>
+    <Text AbsorbsInput="false" DynamicData="/GameData.Quest.UpdateReason" Font="/TextStyles.Normal.NormalStyle" LocalText=":1c09d827e10ead7c:[DEVL]Update name with text that is too long for the space provided" Location="0,22" Margin="1,1,0,1" MaxLines="1" Name="UpdateReason" PackSize="absolute, fixed" ScrollExtent="479,18" Size="238,18" TextColor="#EBDEAA">:1c09d827e10ead7c:[DEVL]Update name with text that is too long for the space provided</Text>
+    <Text AbsorbsInput="false" DynamicData="/GameData.Quest.UpdateText" Font="/TextStyles.Normal.NormalStyle" LocalText=":1c09d82775a4fc42:[DEVL]Update name Second line" Location="0,40" Margin="1,1,0,1" MaxLines="0" Name="UpdateText" PackSize="absolute,absolute" ScrollExtent="238,116" Size="238,116">:1c09d82775a4fc42:[DEVL]Update name Second line</Text>
+  </Page>
+  <Page AbsorbsInput="false" DynamicData="/GameData.Quest.Active" DynamicDataFilter="0801" eq2usescomwndcontrols="true" Location="6,7" Name="JournalsQuestDetail" PackSize="a,a" ScrollExtent="238,156" Size="238,156">
+    <Text AbsorbsInput="false" DynamicData="/GameData.Quest.ActiveName" Font="/TextStyles.Large.LargeStyle" LocalText=":1c09d8272eb75b5c:[DEVL]Sample that is very very very very long" Margin="3,1,2,2" MaxLines="1" Name="QuestName" PackSize="a,f" ScrollExtent="441,22" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="238,22">:1c09d8272eb75b5c:[DEVL]Sample that is very very very very long</Text>
+    <Text AbsorbsInput="false" DynamicData="/GameData.Quest.ActiveTimer" Font="/TextStyles.Normal.NormalStyle" LocalText=":1c09d82727b7e0f2:[DEVL]Time Left 01:10:30" Location="10,22" Margin="0,1,0,0" MaxLines="1" Name="TimerValue" PackSize="a,f" ScrollExtent="241,17" Size="218,17" TextAlignmentVertical="Center" TextColor="#FF2B2B" Visible="false">:1c09d82727b7e0f2:[DEVL]Time Left 01:10:30</Text>
+    <Scrollbar ArrowPressSound="sounds/button" Control="TreeContainer.StageTreeView" HideIfUnnecessary="true" Location="216,22" MaximumSize="22,16384" MinimumSize="22,0" Name="StageTreeViewScroll" PackLocation="right,top" PackSize="f,a" ScrollExtent="22,137" Size="22,137" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false"/>
+    <Page AbsorbsInput="false" Location="0,22" Name="TreeContainer" PackSize="a,a" ScrollExtent="238,134" Size="238,134">
+      <DataSourceContainer Name="TreeDSContainer">
+        <DataSourceContainer check="true" expand="true" Name="Step 1" text=":1c09d827ae2e88fe:I found the Invisible Tome."/>
+        <DataSourceContainer check="true" expand="true" Name="Step 2" text=":1c09d82725dada5b:I defeated the Invincible Giant."/>
+        <DataSourceContainer check="true" expand="true" Name="Step 3" text=":1c09d82772421c58:I crossed Mt. Uncrossable."/>
+        <DataSourceContainer expand="true" Name="Step 4" text=":1c09d8273fd15e39:I must find someone who liked &amp;amp;quot;Battlefield Earth&amp;amp;quot;. Rumors have it that a blind, deaf savant in Freeport claimed, &amp;amp;quot;It didn&amp;amp;apos;t smell bad.&amp;amp;quot; That&amp;amp;apos;s close enough."/>
+      </DataSourceContainer>
+      <RectangleStyle Color="#FFDDAA" Name="RectStyle"/>
+      <TreeViewStyle CellHeight="18" DefaultTextStyle="/TextStyles.Normal.NormalStyle" GridColor="#FFDDAA" ImageStyleChecked="/imagelist.widget_check_on" ImageStyleCollapsed="/imagelist.widget_tree_expand" ImageStyleExpanded="/imagelist.widget_tree_contract" ImageStyleUnchecked="/imagelist.widget_check_off" Indentation="25" Name="StageTreeViewStyle" RStyleActivated="RectStyle" RStyleDefault="RectStyle" SelectionColorBackground="#000000" SelectionColorRect="#000000"/>
+      <TreeView AbsorbsInput="false" BackgroundColor="#555555" BackgroundOpacity="0.000" DataSourceContainer="/GameData.Data.ActiveQuestDSC" Interactive="false" Location="-27,-1" MinimumScrollExtent="242,0" Name="StageTreeView" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="242,132" SelectionAllowedMultiRow="false" Size="242,132" Style="StageTreeViewStyle" UserResizable="true"/>
+    </Page>
+  </Page>
+  <Page AbsorbsInput="false" Name="WindowFrame" PackSize="a,a" ScrollExtent="250,169" Size="250,169">
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="a,a" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="250,169" Size="250,169"/>
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="a,a" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="250,169" Size="250,169"/>
+  </Page>
+</Page>

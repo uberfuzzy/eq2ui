@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page actiontype="Pet" DynamicDataFilter="0005" eq2usescomwndcontrols="true" Location="600,616" MinimumSize="145,92" Name="Pet" PackLocation="right,bottom" ScrollExtent="235,92" Size="235,92" UserMovable="true" UserResizable="true">
+    <Text AbsorbsInput="false" BackgroundOpacity="0.243" DynamicData="/GameData.Pet.Health" DynamicDataFilter="FBFF" Font="/TextStyles.Small.SmallStyle" Location="10,10" Name="Health" ScrollExtent="32,12" Size="32,12" TextColor="#00FF00">:a48c658c4bd85ce8_1:100%</Text>
+    <Text AbsorbsInput="false" BackgroundOpacity="0.243" DynamicData="/GameData.Pet.Power" DynamicDataFilter="FBFF" Font="/TextStyles.Small.SmallStyle" Location="191,10" Name="Power" PackLocation="right,top" ScrollExtent="32,12" Size="32,12" TextAlignment="Right" TextColor="#4CB9FE">:a48c658c4bd85ce8_1:100%</Text>
+    <Text AbsorbsInput="false" Color="#F0D090" DynamicData="/GameData.Pet.Name" Font="/TextStyles.Normal.NormalStyle" Location="10,8" Margin="1,1,2,2" Name="Name" PackLocation="top,left" PackSize="absolute, fixed" ScrollExtent="214,18" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="214,18" TextAlignment="Center">:65eb2e8d9852dee5:Pet Name</Text>
+    <Page BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="10,26" Name="Health" PackSize="absolute" ScrollExtent="216,8" Size="216,8">
+        <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/SpecialElements.GreyscaleVitalBar.data.frame.rect" ScrollExtent="216,8" Size="216,8" />
+        <Image Location="47,0" Name="Tick0" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+        <Image Location="86,0" Name="Tick1" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+        <Image Location="125,0" Name="Tick2" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+        <Image Location="164,0" Name="Tick3" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+        <Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.Pet.Health" DynamicDataFilter="FFFB" Location="7,0" Name="Bar" PackSize="absolute,absolute" Progress="0.500" ScrollExtent="202,8" Size="202,8" Style="/SpecialElements.GreyscaleVitalBar.data.bar.bar_style" />
+        <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Color="#440000" Location="5,0" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="209,8" Size="209,8" Style="/SpecialElements.GreyscaleVitalBar.data.bkg.style" />
+    </Page>
+    <Page BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="10,34" Name="Power" PackSize="absolute" ScrollExtent="216,8" Size="216,8">
+        <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/SpecialElements.GreyscaleVitalBar.data.frame.rect" ScrollExtent="216,8" Size="216,8" />
+        <Image Location="47,0" Name="Tick0" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+        <Image Location="86,0" Name="Tick1" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+        <Image Location="124,0" Name="Tick2" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+        <Image Location="163,0" Name="Tick3" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+        <Progressbar AbsorbsInput="false" Color="#6F64FE" DynamicData="/GameData.Pet.Power" DynamicDataFilter="FFFB" Location="7,0" Name="Bar" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="202,8" Size="202,8" Style="/SpecialElements.GreyscaleVitalBar.data.bar.bar_style" />
+        <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Color="#000044" Location="5,0" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="209,8" Size="209,8" Style="/SpecialElements.GreyscaleVitalBar.data.bkg.style" />
+    </Page>
+    <Page Location="10,26" Name="_Health" PackSize="absolute,fixed" ScrollExtent="216,6" Size="216,6" Visible="false">
+        <Image AbsorbsInput="false" Name="BubblesOverlay" PackSize="absolute,absolute" ScrollExtent="217,6" Size="217,6" SourceRect="259,183,385,189" SourceResource="/images/window_elements_generic.dds" Stretch="false" />
+        <Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.Pet.Health" DynamicDataFilter="FFFB" Location="9,1" Name="Bar" PackLocation="top,left" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="197,4" Size="197,4" Style="/progressbarlist.progress_default" />
+        <Image AbsorbsInput="false" BackgroundColor="#440000" BackgroundOpacity="0.800" Location="5,0" Name="BarBkg" PackSize="absolute,absolute" ScrollExtent="210,6" Size="210,6" />
+    </Page>
+    <Page Location="10,34" Name="_Power" PackSize="absolute,fixed" ScrollExtent="216,6" Size="216,6" Visible="false">
+        <Image AbsorbsInput="false" Name="BubblesOverlay" PackSize="absolute,absolute" ScrollExtent="217,6" Size="217,6" SourceRect="259,183,385,189" SourceResource="/images/window_elements_generic.dds" Stretch="false" />
+        <Progressbar AbsorbsInput="false" Color="#6F64FE" DynamicData="/GameData.Pet.Power" DynamicDataFilter="FFFB" Location="9,1" Name="Bar" PackLocation="top,left" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="197,4" Size="197,4" Style="/progressbarlist.progress_default" Visible="false" />
+        <Image AbsorbsInput="false" BackgroundColor="#000044" BackgroundOpacity="0.800" Location="5,0" Name="BarBkg" PackSize="absolute,absolute" ScrollExtent="210,6" Size="210,6" />
+    </Page>
+    <VolumePage AbsorbsInput="false" BackgroundColor="#FF0000" CellCount="7,1" CellSelectable="false" CellSize="28,28" Location="10,48" MinimumScrollExtent="212,32" Name="Volume" PackSize="absolute,absolute" ScrollExtent="215,34" Size="215,34">
+        <Icon ActionData="command petAttack" BackgroundTint="#000000" Dragable="true" IconID="12" IconStyle="/IconStyles.button" Location="2,2" MouseOverColor="#FFFF00" Name="Attack" ScrollExtent="28,28" Size="28,28" TreatAsButton="true" />
+        <Icon ActionData="command petBackOff" BackgroundTint="#000000" Dragable="true" IconID="11" IconStyle="/IconStyles.button" Location="32,2" MouseOverColor="#FFFF00" Name="Backoff" ScrollExtent="28,28" Size="28,28" TreatAsButton="true" />
+        <Icon ActionData="command petProtectMe" BackgroundTint="#000000" Dragable="true" IconID="12" IconStyle="/IconStyles.button" Location="62,2" MouseOverColor="#FFFF00" Name="ProtectMe" ScrollExtent="28,28" Size="28,28" TreatAsButton="true" />
+        <Icon ActionData="command petProtectSelf" BackgroundTint="#000000" Dragable="true" IconID="13" IconStyle="/IconStyles.button" Location="92,2" MouseOverColor="#FFFF00" Name="ProtectSelf" ScrollExtent="28,28" Size="28,28" TreatAsButton="true" />
+        <Icon ActionData="command petFollow" BackgroundTint="#000000" Dragable="true" IconID="14" IconStyle="/IconStyles.button" Location="122,2" MouseOverColor="#FFFF00" Name="Follow" ScrollExtent="28,28" Size="28,28" TreatAsButton="true" />
+        <Icon ActionData="command petStay" BackgroundTint="#000000" Dragable="true" IconID="14" IconStyle="/IconStyles.button" Location="152,2" MouseOverColor="#FFFF00" Name="Stay" ScrollExtent="28,28" Size="28,28" TreatAsButton="true" />
+        <Icon ActionData="command petDismiss" BackgroundTint="#000000" Dragable="true" IconID="16" IconStyle="/IconStyles.button" Location="182,2" MouseOverColor="#FFFF00" Name="Dismiss" ScrollExtent="28,28" Size="28,28" TreatAsButton="true" />
+    </VolumePage>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="235,92" Size="235,92">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="235,92" Size="235,92" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="235,92" Size="235,92" />
+    </Page>
+</Page>

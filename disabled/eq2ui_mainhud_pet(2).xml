@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page actiontype="Pet" DynamicDataFilter="0005" eq2usescomwndcontrols="true" Location="60,299" MaximumSize="188,95" MinimumSize="188,40" Name="Pet" PackLocation="right,bottom" ScrollExtent="188,95" Size="188,95" UserMovable="true" UserResizable="true" UserScrollable="false">
+	<Text AbsorbsInput="false" Color="#F0D090" DynamicData="/GameData.Pet.Name" Font="/TextStyles.Normal.NormalStyle" Location="5,6" Margin="1,1,2,2" Name="Name" PackLocation="top,left" PackSize="absolute, fixed" ScrollExtent="179,18" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="179,18" TextAlignment="Center">:65eb2e8d9852dee5:Pet Name</Text>
+	<Button BackgroundOpacity="0.000" Location="40,7" Name="TargetPet" OnPress="target_pet target_pet" ScrollExtent="110,33" Size="110,33" Style="/ButtonStyles.invisible" Tooltip="Target Pet or Self" />
+	<Text AbsorbsInput="false" actiontype="Target" Color="#00FF40" DynamicData="/GameData.Pet.Health" Font="/Fonts.FontZapf15" Location="6,6" MaximumSize="124,17" MaxLines="1" Name="Health" PackLocation="right,top" ScrollExtent="30,16" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="30,16" TextAlignment="Right" TruncateElipsis="false" />
+	<Text AbsorbsInput="false" actiontype="Target" Color="#6F64FE" DynamicData="/GameData.Pet.Power" DynamicDataFilter="FBFF" Font="/Fonts.FontZapf15" Location="153,6" MaximumSize="124,17" MaxLines="1" Name="Power" PackLocation="right,top" PackSize="f,f" ScrollExtent="30,16" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="30,16" TextAlignment="Right" TruncateElipsis="false" />
+	<Page BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="6,23" Name="Health" PackSize="absolute" ScrollExtent="175,8" Size="175,8">
+		<Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/SpecialElements.GreyscaleVitalBar.data.frame.rect" ScrollExtent="175,8" Size="175,8" />
+		<Image Location="37,0" Name="Tick0" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+		<Image Location="68,0" Name="Tick1" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+		<Image Location="100,0" Name="Tick2" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+		<Image Location="131,0" Name="Tick3" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+		<Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.Pet.Health" DynamicDataFilter="FFFB" Location="7,0" Name="Bar" PackSize="absolute,absolute" Progress="0.500" ScrollExtent="161,8" Size="161,8" Style="/SpecialElements.GreyscaleVitalBar.data.bar.bar_style" />
+		<Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Color="#440000" Location="1,0" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="173,8" Size="173,8" Style="/SpecialElements.GreyscaleVitalBar.data.bkg.style" />
+	</Page>
+	<Page BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="6,34" Name="Power" PackSize="absolute" ScrollExtent="175,8" Size="175,8">
+		<Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/SpecialElements.GreyscaleVitalBar.data.frame.rect" ScrollExtent="175,8" Size="175,8" />
+		<Image Location="37,0" Name="Tick0" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+		<Image Location="68,0" Name="Tick1" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+		<Image Location="99,0" Name="Tick2" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+		<Image Location="131,0" Name="Tick3" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+		<Progressbar AbsorbsInput="false" Color="#6F64FE" DynamicData="/GameData.Pet.Power" DynamicDataFilter="FFFB" Location="7,0" Name="Bar" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="161,8" Size="161,8" Style="/SpecialElements.GreyscaleVitalBar.data.bar.bar_style" />
+		<Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Color="#000044" Location="1,0" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="173,8" Size="173,8" Style="/SpecialElements.GreyscaleVitalBar.data.bkg.style" />
+	</Page>
+	<Page Location="14,23" Name="_Health" PackSize="absolute,fixed" ScrollExtent="160,6" Size="160,6" Visible="false">
+		<Image AbsorbsInput="false" Name="BubblesOverlay" PackSize="absolute,absolute" ScrollExtent="160,6" Size="160,6" SourceRect="259,183,385,189" SourceResource="images/window_elements_generic.dds" Stretch="false" />
+		<Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.Pet.Health" DynamicDataFilter="FFFB" Location="1,1" Name="Bar" PackLocation="top,left" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="158,4" Size="158,4" Style="/progressbarlist.progress_default" />
+		<Image AbsorbsInput="false" BackgroundColor="#440000" BackgroundOpacity="0.800" Location="1,0" Name="BarBkg" PackSize="absolute,absolute" ScrollExtent="158,6" Size="158,6" />
+	</Page>
+	<Page Location="14,34" Name="_Power" PackSize="absolute,fixed" ScrollExtent="160,6" Size="160,6" Visible="false">
+		<Image AbsorbsInput="false" Name="BubblesOverlay" PackSize="absolute,absolute" ScrollExtent="160,6" Size="160,6" SourceRect="259,183,385,189" SourceResource="images/window_elements_generic.dds" Stretch="false" />
+		<Progressbar AbsorbsInput="false" Color="#6F64FE" DynamicData="/GameData.Pet.Power" DynamicDataFilter="FFFB" Location="1,1" Name="Bar" PackLocation="top,left" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="158,4" Size="158,4" Style="/progressbarlist.progress_default" Visible="false" />
+		<Image AbsorbsInput="false" BackgroundColor="#000044" BackgroundOpacity="0.800" Location="1,0" Name="BarBkg" PackSize="absolute,absolute" ScrollExtent="158,6" Size="158,6" />
+	</Page>
+	<VolumePage AbsorbsInput="false" BackgroundColor="#FF0000" CellCount="7,1" CellSelectable="false" CellSize="19,19" Location="20,41" MinimumScrollExtent="149,23" Name="Volume" PackSize="f,f" ScrollExtent="149,23" Size="149,22">
+		<Icon ActionData="command petDismiss" BackgroundTint="#000000" Dragable="true" IconID="16" IconStyle="/IconStyles.button" Location="2,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="Dismiss" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+		<Icon ActionData="command petProtectSelf" BackgroundTint="#000000" Dragable="true" IconID="13" IconStyle="/IconStyles.button" Location="23,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="ProtectSelf" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+		<Icon ActionData="command petProtectMe" BackgroundTint="#000000" Dragable="true" IconID="12" IconStyle="/IconStyles.button" Location="44,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="ProtectMe" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+		<Icon ActionData="command petFollow" BackgroundTint="#000000" Dragable="true" IconID="14" IconStyle="/IconStyles.button" Location="65,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="Follow" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+		<Icon ActionData="command petStay" BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="86,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="Stay" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+		<Icon ActionData="command petAttack" BackgroundTint="#000000" Dragable="true" IconID="12" IconStyle="/IconStyles.button" Location="107,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="Attack" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+		<Icon ActionData="command petBackOff" BackgroundTint="#000000" Dragable="true" IconID="11" IconStyle="/IconStyles.button" Location="128,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="Backoff" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+	</VolumePage>
+	<VolumePage AbsorbsInput="false" BackgroundColor="#FF0000" CellCount="7,1" CellSelectable="false" CellSize="19,19" Location="20,63" MinimumScrollExtent="149,23" Name="Volume2" PackSize="f,f" ScrollExtent="149,23" Size="149,22">
+		<Page Location="2,2" Name="Melee" ScrollExtent="19,19" Size="19,19">
+			<Page Name="Sizer" ScrollExtent="19,19" Size="19,19">
+				<Image AbsorbsInput="false" Name="Pulse" OnShowEffector="PulseEffect" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="84,84,126,126" SourceResource="images/icons/icon_transp1.dds" Visible="false" />
+				<EffectorCycleOpacity MaxSpeed="5.000" MinSpeed="5.000" Name="PulseEffect" Speed="5.000" />
+				<Image AbsorbsInput="false" Name="FrameOverlay" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="126,42,168,84" SourceResource="images/icons/icon_transp1.dds" />
+				<Image AbsorbsInput="false" Name="HoverShadow" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="84,84,126,126" SourceResource="images/icons/icon_transp1.dds" Visible="false" />
+				<Button Name="PetMelee" OnActivate="pet=melee&#xD;&#xA;&#x9;Parent.Size=16,16 &#xD;&#xA;&#x9;Parent.Location=2,2 &#xD;&#xA;&#x9;Parent.Pulse.Visible=true&#xD;&#xA;&#x9;Parent.Parent.Parent.Ranged.Sizer.Size=19,19 &#xD;&#xA;&#x9;Parent.Parent.Parent.Ranged.Sizer.Location=0,0&#xD;&#xA;&#x9;Parent.Parent.Parent.Ranged.Sizer.Pulse.Visible=false" OnHoverIn="Parent.HoverShadow.Visible=true" OnHoverOut="Parent.HoverShadow.Visible=false" PackSize="p,p" pet="melee" ScrollExtent="19,19" Size="19,19" Style="Melee.Style" Tooltip="Pet Melee" UserMovable="true" />
+				<Namespace Name="Melee">
+					<ButtonStyle Name="Style" RStyleActivated="Pressed.rect" RStyleDefault="Normal.rect" />
+					<Namespace Name="Normal">
+						<RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+						<ImageStyle Filter="true" Name="center">
+							<ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="168,42,210,84" />
+						</ImageStyle>
+					</Namespace>
+					<Namespace Name="Pressed">
+						<RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+						<ImageStyle Filter="true" Name="center">
+							<ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="168,42,210,84" />
+						</ImageStyle>
+					</Namespace>
+				</Namespace>
+			</Page>
+		</Page>
+		<Page Location="23,2" Name="Ranged" ScrollExtent="19,19" Size="19,19">
+			<Page Name="Sizer" ScrollExtent="19,19" Size="19,19">
+				<Image AbsorbsInput="false" Name="Pulse" OnShowEffector="PulseEffect" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="84,84,126,126" SourceResource="images/icons/icon_transp1.dds" Visible="false" />
+				<EffectorCycleOpacity MaxSpeed="5.000" MinSpeed="5.000" Name="PulseEffect" Speed="5.000" />
+				<Image AbsorbsInput="false" Name="FrameOverlay" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="126,42,168,84" SourceResource="images/icons/icon_transp1.dds" />
+				<Image AbsorbsInput="false" Name="HoverShadow" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="84,84,126,126" SourceResource="images/icons/icon_transp1.dds" Visible="false" />
+				<Button Name="PetRanged" OnActivate="pet=ranged&#xD;&#xA;&#x9;Parent.Size=16,16 &#xD;&#xA;&#x9;Parent.Location=2,2 &#xD;&#xA;&#x9;Parent.Pulse.Visible=true&#xD;&#xA;&#x9;Parent.Parent.Parent.Melee.Sizer.Size=19,19 &#xD;&#xA;&#x9;Parent.Parent.Parent.Melee.Sizer.Location=0,0&#xD;&#xA;&#x9;Parent.Parent.Parent.Melee.Sizer.Pulse.Visible=false" OnHoverIn="Parent.HoverShadow.Visible=true" OnHoverOut="Parent.HoverShadow.Visible=false" PackSize="p,p" pet="ranged" ScrollExtent="19,19" Size="19,19" Style="Ranged.Style" Tooltip="Pet Ranged" UserMovable="true" />
+				<Namespace Name="Ranged">
+					<ButtonStyle Name="Style" RStyleActivated="Pressed.rect" RStyleDefault="Normal.rect" />
+					<Namespace Name="Normal">
+						<RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+						<ImageStyle Filter="true" Name="center">
+							<ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="0,168,42,210" />
+						</ImageStyle>
+					</Namespace>
+					<Namespace Name="Pressed">
+						<RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+						<ImageStyle Filter="true" Name="center">
+							<ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="0,168,42,210" />
+						</ImageStyle>
+					</Namespace>
+				</Namespace>
+			</Page>
+		</Page>
+		<Page AbsorbsInput="false" Location="44,2" Name="PetCure" ScrollExtent="19,19" Size="19,19">
+			<Button BackgroundOpacity="0.000" Name="PetCure" OnHoverIn="Parent.HoverShadow.Visible=true" OnHoverOut="Parent.HoverShadow.Visible=false" OnPress="clearabilityqueue ; cancel_spellcast ; target_pet ; useability Cure Arcane ; useability Cure Elemental ; target_previous" ScrollExtent="19,19" Size="19,19" Tooltip="Cure Pet" />
+			<Image AbsorbsInput="false" Name="FrameOverlay" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="126,42,168,84" SourceResource="images/icons/icon_transp1.dds" />
+			<Image AbsorbsInput="false" Name="HoverShadow" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="84,84,126,126" SourceResource="images/icons/icon_transp1.dds" Visible="false" />
+			<Image AbsorbsInput="false" Location="1,1" Name="Image1" ScrollExtent="19,19" Size="19,19" SourceRect="210,0,251,42" SourceResource="images/Icons/icon_ss2.dds" />
+		</Page>
+		<Page AbsorbsInput="false" Location="65,2" Name="ShrinkPet" ScrollExtent="19,19" Size="19,19">
+			<Button BackgroundOpacity="0.000" Name="Shrink" OnHoverIn="Parent.HoverShadow.Visible=true" OnHoverOut="Parent.HoverShadow.Visible=false" OnPress="clearabilityqueue ; cancel_spellcast ; useability Shrink Servant ; target_previous" ScrollExtent="19,19" Size="19,19" Tooltip="Shrink Pet" />
+			<Image AbsorbsInput="false" Name="FrameOverlay" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="126,42,168,84" SourceResource="images/icons/icon_transp1.dds" />
+			<Image AbsorbsInput="false" Name="HoverShadow" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="84,84,126,126" SourceResource="images/icons/icon_transp1.dds" Visible="false" />
+			<Image AbsorbsInput="false" Location="1,1" Name="Image2" ScrollExtent="19,19" Size="19,19" SourceRect="168,210,210,250" SourceResource="images/icons/icon_ss17.dds" />
+		</Page>
+		<Page AbsorbsInput="false" Location="86,2" Name="CallPet" ScrollExtent="19,19" Size="19,19">
+			<Button BackgroundOpacity="0.000" Name="Call" OnHoverIn="Parent.HoverShadow.Visible=true" OnHoverOut="Parent.HoverShadow.Visible=false" OnPress="clearabilityqueue ; cancel_spellcast ; useability Call Servant ; target_previous" ScrollExtent="19,19" Size="19,19" Tooltip="Call Pet" />
+			<Image AbsorbsInput="false" Name="FrameOverlay" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="126,42,168,84" SourceResource="images/icons/icon_transp1.dds" />
+			<Image AbsorbsInput="false" Name="HoverShadow" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="84,84,126,126" SourceResource="images/icons/icon_transp1.dds" Visible="false" />
+			<Image AbsorbsInput="false" Location="1,1" Name="Image3" ScrollExtent="19,19" Size="19,19" SourceRect="84,0,126,42" SourceResource="images/icons/icon_ss17.dds" />
+		</Page>
+		<Page AbsorbsInput="false" Location="107,2" Name="HealPet" ScrollExtent="19,19" Size="19,19">
+			<Button BackgroundOpacity="0.000" Name="Heal" OnHoverIn="Parent.HoverShadow.Visible=true" OnHoverOut="Parent.HoverShadow.Visible=false" OnPress="clearabilityqueue ; cancel_spellcast ; useability Reconstruct Servant ; useability Necrotic Reconstruction ; useability Restore Servant ; useability Necrotic Reformation ; useability Rebuild Servant ; useability Necrotic Replenishment ; useability Renew Servant ; useability Necrotic Mending ; useability Repair Servant ; useability Mend Bones ; useability Soothe Servant ; useability Repair Bones ; useability Heal Servant ; useability Heal Minion ; target_previous" ScrollExtent="19,19" Size="19,19" Tooltip="Heal Pet" />
+			<Image AbsorbsInput="false" Name="FrameOverlay" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="126,42,168,84" SourceResource="images/icons/icon_transp1.dds" />
+			<Image AbsorbsInput="false" Name="HoverShadow" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="84,84,126,126" SourceResource="images/icons/icon_transp1.dds" Visible="false" />
+			<Image AbsorbsInput="false" Location="1,1" Name="Image4" ScrollExtent="19,19" Size="19,19" SourceRect="84,126,126,168" SourceResource="images/icons/icon_ss17.dds" />
+		</Page>
+		<Page AbsorbsInput="false" Location="128,2" Name="AttackProtectUs" ScrollExtent="19,19" Size="19,19">
+			<Button BackgroundOpacity="0.000" Name="PetMelee" OnHoverIn="Parent.HoverShadow.Visible=true" OnHoverOut="Parent.HoverShadow.Visible=false" OnPress="pet=backoff ; pet=backoff ; &#xD;&#xA;pet=preserve_master ; pet=preserve_master ; &#xD;&#xA;pet=preserve_self ; pet=preserve_self ; &#xD;&#xA;pet=attack ; pet=attack" pet="attack" ScrollExtent="19,19" Size="19,19" Style="APUButtonStyle" Tooltip="Attack + Protect Us" UserMovable="true" />
+			<Image AbsorbsInput="false" Name="FrameOverlay" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="126,42,168,84" SourceResource="/images/icons/icon_transp1.dds" />
+			<Image AbsorbsInput="false" Name="HoverShadow" PackSize="p,p" ScrollExtent="19,19" Size="19,19" SourceRect="84,84,126,126" SourceResource="/images/icons/icon_transp1.dds" Visible="false" />
+			<Image AbsorbsInput="false" Location="1,1" Name="Image5" ScrollExtent="19,19" Size="19,19" SourceRect="169,169,210,210" SourceResource="/images/icons/icon_ss16.dds" />
+		</Page>
+	</VolumePage>
+	<Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="188,95" Size="188,95">
+		<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="188,95" Size="188,95" />
+		<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="188,95" Size="188,95" />
+	</Page>
+</Page>

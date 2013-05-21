@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page alwaysontop="true" BackgroundColor="#00FF00" DynamicData="/GameData.Self.Breath" DynamicDataFilter="0001" eq2usescomwndcontrols="true" MaximumSize="16384,50" MinimumSize="100,50" Name="Breath" PackLocation="center,bottom" PackSize="absolute,fixed" ScrollExtent="320,50" Size="320,50" UserMovable="true" UserResizable="true">
+    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="5,5" Name="BreathText" PackSize="absolute,fixed" ScrollExtent="310,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="310,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:7c102eeec268b52a:Breath</Text>
+    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="155,25" Name="SlashText" PackLocation="cfc," ScrollExtent="10,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="10,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">/</Text>
+    <Page Location="5,25" Name="Breath" PackSize="absolute,fixed" ScrollExtent="310,20" Size="310,20">
+        <Composite Name="BreathTime" Orientation="Horizontal" PackSize="a," ScrollExtent="310,20" Size="310,20" SpacingType="Fill">
+            <Page Name="RTPage" PackSize="a," ScrollExtent="155,20" Size="155,20">
+                <Text AbsorbsInput="false" DynamicData="/GameData.Self.Breath" Font="/TextStyles.Large.LargeStyle" Margin="0,0,10,0" Name="RemainingTime" PackLocation="FFF,FFF" ScrollExtent="155,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="155,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#F0D080">10000</Text>
+            </Page>
+            <Page Location="155,0" Name="MTPage" PackSize="a," ScrollExtent="155,20" Size="155,20">
+                <Text AbsorbsInput="false" DynamicData="/GameData.Self.BreathMax" Name="Time" OnTextChanged="parent.MaxTime.Text=int(Text)" Visible="false" />
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Margin="0,0,1,0" Name="MaxTime" ScrollExtent="30,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="30,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#F0D080">100000</Text>
+                <Text Font="/TextStyles.Large.LargeStyle" Location="30,0" Margin="5,0,0,0" Name="Seconds" ScrollExtent="125,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="125,20" TextAlignmentVertical="Center" TextColor="#F0D080">seconds</Text>
+            </Page>
+        </Composite>
+        <Image AbsorbsInput="false" Name="Bkg" PackSize="absolute,fixed" ScrollExtent="310,20" Size="310,20" SourceRect="0,0,308,21" SourceResource="/images/window_elements_hr.dds" />
+        <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#4BB3FE" description="Amount of breath remaining: Progress, Text" DynamicData="/GameData.Self.Breath" Location="3,2" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="305,16" Size="305,16" Style="ProgressStyle" Tooltip=":7c102eeea17f0456:Amount of air remaining" />
+        <Page BackgroundOpacity="1.000" Location="3,2" Name="BarBkg" PackSize="a," ScrollExtent="305,16" Size="305,16" />
+        <ImageStyle Name="ProgressFill">
+            <ImageFrame Name="Image" Source="images/window_elements_hr.dds" SourceRect="136,351,350,364" />
+        </ImageStyle>
+        <ProgressbarStyle Bar.Background="ProgressFill" Name="ProgressStyle" />
+    </Page>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="320,50" Size="320,50" Visible="false">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="320,50" Size="320,50" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="320,50" Size="320,50" />
+    </Page>
+</Page>
