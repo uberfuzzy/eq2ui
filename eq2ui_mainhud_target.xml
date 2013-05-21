@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page DynamicData="/GameData.Target.Window" DynamicDataFilter="0001" eq2usescomwndcontrols="true" Location="161,0" MaximumSize="16000,200" Name="Target" PackLocation="left,top" ScrollExtent="183,110" Size="183,110" UserMovable="true" version="2.1">
+    <Text AbsorbsInput="false" BackgroundColor="#00FF00" DynamicData="/GameData.Target.Health" DynamicDataFilter="FBFF" Font="/TextStyles.Small.SmallStyle" Location="149,8" Name="Health" ScrollExtent="24,12" Size="24,12" TextAlignment="Right" TextColor="#03E300">:a48c658c4bd85ce8_1:100%</Text>
+    <Text AbsorbsInput="false" DynamicData="/GameData.Target.Power" DynamicDataFilter="FBFF" Font="/TextStyles.Small.SmallStyle" Location="149,18" Name="Power" ScrollExtent="24,12" Size="24,12" TextAlignment="Right" TextColor="#4CB9FE">:a48c658c4bd85ce8_1:100%</Text>
+    <Page Location="10,10" Name="v0" ScrollExtent="134,68" Size="134,68" Visible="false">
+        <Text DynamicData="/GameData.Target.Distance" Font="/TextStyles.Normal.NormalStyle" Location="7,-3" Margin="1,1,1,1" Name="Distance" ScrollExtent="41,30" Size="41,30">:170530c447b9eb5f:00</Text>
+        <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="0,-6" Name="TierIndicator" ScrollExtent="138,15" Size="138,15" />
+        <ImageStyle Filter="true" Name="AAExpAvailable">
+            <ImageFrame Name="image" Source="images/icons/aa_active_icons.dds" SourceRect="40,39,62,62" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="QuestGenericTarget">
+            <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="224,219,246,241" />
+        </ImageStyle>
+        <Image AbsorbsInput="false" BackgroundColor="#00FFFF" Location="110,-2" Name="AAExpIndicator" ScrollExtent="12,12" Size="12,12" Style="AAExpAvailable" />
+        <Image AbsorbsInput="false" BackgroundColor="#00FFFF" Location="125,-2" Name="QuestTargetIndicator" ScrollExtent="12,12" Size="12,12" Style="QuestGenericTarget" />
+        <Text AbsorbsInput="false" actiontype="Target" DynamicData="/GameData.Target.Name" Font="/TextStyles.Normal.NormalStyle" Location="0,9" Margin="1,1,2,2" MaximumSize="16000,36" MaxLines="2" Name="Name" PackSize="absolute,fixed" ScrollExtent="134,33" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="134,18" TextAlignment="Center" TruncateElipsis="false">:bbd90740fb51c90b:Ambassador Rotgaf of Freeport</Text>
+        <Text AbsorbsInput="false" actiontype="Target" Font="/TextStyles.Normal.NormalStyle" Location="0,34" Margin="1,1,1,1" Name="Info" PackLocation="top,left" PackSize="absolute,fixed" ScrollExtent="134,18" ShadowStyle="/ShadowStylesNew.Outline.style" Size="134,18" TextAlignment="Center" TextColor="#00FF40">:bbd9074053fe943e:Group</Text>
+        <Page BackgroundColor="#00FF00" DynamicData="/GameData.Target.Health" DynamicDataFilter="0001" eq2usescomwndcontrols="true" Location="0,26" Name="Health" PackSize="absolute" ScrollExtent="134,8" Size="134,8">
+            <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/SpecialElements.GreyscaleVitalBar.data.frame.rect" ScrollExtent="134,8" Size="134,8" />
+            <Image Location="28,0" Name="Tick0" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+            <Image Location="52,0" Name="Tick1" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+            <Image Location="77,0" Name="Tick2" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+            <Image Location="101,0" Name="Tick3" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+            <Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.Target.Health" DynamicDataFilter="FFFB" Location="7,0" Name="Bar" PackSize="absolute,absolute" Progress="0.500" ScrollExtent="120,8" Size="120,8" Style="/SpecialElements.GreyscaleVitalBar.data.bar.bar_style" />
+            <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Color="#440000" Location="5,0" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="127,8" Size="127,8" Style="/SpecialElements.GreyscaleVitalBar.data.bkg.style" />
+        </Page>
+        <Page DynamicData="/GameData.Target.Casting" DynamicDataFilter="FFFFFBFF" Location="0,52" Name="Casting" PackSize="a,f" ScrollExtent="134,16" Size="134,16">
+            <Text DynamicData="/GameData.Target.Casting" DynamicDataFilter="FFFFFBFF" Font="/TextStyles.Small.SmallStyle" Name="Spellname" PackSize="a,f" ScrollExtent="134,16" Size="134,16" TextAlignment="Center" TextAlignmentVertical="Center">:170530c4987a2859:Ice Comet</Text>
+            <Page BackgroundOpacity="1.000" Location="2,2" Name="Frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="130,12" Size="130,12" />
+            <Progressbar AbsorbsInput="false" Color="#B00000" DynamicData="/GameData.Target.Casting" Location="4,4" Name="Bar" PackSize="absolute,absolute" Progress="0.500" ScrollExtent="126,8" Size="126,8" Style="/progressbarlist.Casting.casting_style" />
+            <Page BackgroundOpacity="1.000" Location="3,3" Name="Background" PackSize="a,a" RStyleDefault="/progressbarlist.Casting.Bkg.rect" ScrollExtent="128,10" Size="128,10" />
+        </Page>
+        <Icon BackgroundTint="#000000" Dragable="true" IconID="12" Location="13,51" MaximumSize="26,26" MinimumSize="13,13" MouseOverColor="#FFFF00" Name="TagNumber" ScrollExtent="15,15" Size="15,15" TreatAsButton="true" />
+        <Icon BackgroundTint="#000000" Dragable="true" IconID="12" Location="2,40" MaximumSize="26,26" MinimumSize="26,26" MouseOverColor="#FFFF00" Name="TagIcon" ScrollExtent="26,26" Size="26,26" TreatAsButton="true" />
+    </Page>
+    <Page Location="10,10" Name="v1" ScrollExtent="163,90" Size="163,90">
+        <Text DynamicData="/GameData.Target.Distance" Font="/TextStyles.Normal.NormalStyle" Location="32,-3" Margin="1,1,1,1" Name="Distance" ScrollExtent="41,30" Size="41,30">:170530c447b9eb5f_1:00</Text>
+        <Page DynamicData="/GameData.Target.Casting" DynamicDataFilter="FFFFFBFF" Location="11,59" Name="Casting" PackSize="a,f" ScrollExtent="140,16" Size="140,16">
+            <Text DynamicData="/GameData.Target.Casting" DynamicDataFilter="FFFFFBFF" Font="/TextStyles.Small.SmallStyle" Name="Spellname" PackSize="a,f" ScrollExtent="140,16" Size="140,16" TextAlignment="Center" TextAlignmentVertical="Center">:170530c4987a2859_1:Ice Comet</Text>
+            <Page BackgroundOpacity="1.000" Location="2,2" Name="Frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="136,12" Size="136,12" />
+            <Progressbar AbsorbsInput="false" Color="#B00000" DynamicData="/GameData.Target.Casting" Location="4,4" Name="Bar" PackSize="absolute,absolute" Progress="0.500" ScrollExtent="132,8" Size="132,8" Style="/progressbarlist.Casting.casting_style" />
+            <Page BackgroundOpacity="1.000" Location="3,3" Name="Background" PackSize="a,a" RStyleDefault="/progressbarlist.Casting.Bkg.rect" ScrollExtent="134,10" Size="134,10" />
+        </Page>
+        <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="14,0" Name="TierIndicator" ScrollExtent="132,15" Size="132,15" />
+        <ImageStyle Filter="true" Name="AAExpAvailable">
+            <ImageFrame Name="image" Source="images/icons/aa_active_icons.dds" SourceRect="40,39,62,62" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="QuestGenericTarget">
+            <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="224,219,246,241" />
+        </ImageStyle>
+        <Image AbsorbsInput="false" BackgroundColor="#00FFFF" Location="110,-2" Name="AAExpIndicator" ScrollExtent="12,12" Size="12,12" Style="AAExpAvailable" />
+        <Image AbsorbsInput="false" BackgroundColor="#00FFFF" Location="125,-2" Name="QuestTargetIndicator" ScrollExtent="12,12" Size="12,12" Style="QuestGenericTarget" />
+        <Text AbsorbsInput="false" actiontype="Target" DynamicData="/GameData.Target.Name" Font="/TextStyles.Normal.NormalStyle" Location="11,10" Margin="1,1,1,1" MaximumSize="16000,36" MaxLines="2" Name="Name" PackSize="absolute,fixed" ScrollExtent="140,36" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="140,36" TextAlignment="Center" TruncateElipsis="false">:bbd90740fb51c90b_1:Ambassador Rotgaf of Freeport</Text>
+        <Text AbsorbsInput="false" actiontype="Target" Font="/TextStyles.Normal.NormalStyle" Location="14,30" Margin="1,1,1,1" Name="Info" PackLocation="top,left" PackSize="absolute,fixed" ScrollExtent="134,18" ShadowStyle="/ShadowStylesNew.Outline.style" Size="134,18" TextAlignment="Center" TextColor="#00FF40">:170530c4aef1dfe1:Lvl 80 Shadowknight</Text>
+        <Page BackgroundColor="#00FF00" DynamicData="/GameData.Target.Health" DynamicDataFilter="0001" eq2usescomwndcontrols="true" Location="19,26" Name="Health" PackSize="absolute" ScrollExtent="123,8" Size="123,8">
+            <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/SpecialElements.GreyscaleVitalBar.data.frame.rect" ScrollExtent="123,8" Size="123,8" />
+            <Image Location="25,0" Name="Tick0" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+            <Image Location="47,0" Name="Tick1" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+            <Image Location="70,0" Name="Tick2" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+            <Image Location="92,0" Name="Tick3" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+            <Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.Target.Health" DynamicDataFilter="FFFB" Location="7,0" Name="Bar" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="109,8" Size="109,8" Style="/SpecialElements.GreyscaleVitalBar.data.bar.bar_style" />
+            <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Color="#440000" Location="5,0" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="116,8" Size="116,8" Style="/SpecialElements.GreyscaleVitalBar.data.bkg.style" />
+        </Page>
+        <Icon BackgroundTint="#000000" Dragable="true" IconID="12" Location="11,11" MaximumSize="26,26" MinimumSize="13,13" MouseOverColor="#FFFF00" Name="TagNumber" ScrollExtent="15,15" Size="15,15" TreatAsButton="true" />
+        <Icon BackgroundTint="#000000" Dragable="true" IconID="12" MaximumSize="26,26" MinimumSize="26,26" MouseOverColor="#FFFF00" Name="TagIcon" ScrollExtent="26,26" Size="26,26" TreatAsButton="true" />
+        <Page Location="22,45" Name="WeakTier" OnShow="parent.Casting.Top=59" PackSize="absolute,fixed" ScrollExtent="117,15" Size="117,15" Visible="false">
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="36,0" Name="Center" PackLocation="cfc,cfc" ScrollExtent="43,15" Size="43,15" SourceRect="40,241,83,256" SourceResource="images/widgets02.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Name="LeftCap" ScrollExtent="37,15" Size="37,15" SourceRect="4,241,39,256" SourceResource="images/widgets02.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="8,0" Name="LeftStretch" PackSize="absolute,fixed" ScrollExtent="29,15" Size="29,15" SourceRect="10,241,39,256" SourceResource="images/widgets02.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="79,0" Name="RightStretch" PackLocation="fff,top" PackSize="absolute,fixed" ScrollExtent="24,15" Size="24,15" SourceRect="84,241,108,256" SourceResource="images/widgets02.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="79,0" Name="RightCap" PackLocation="fff,top" ScrollExtent="38,15" Size="38,15" SourceRect="84,241,121,256" SourceResource="images/widgets02.dds" />
+        </Page>
+        <Page Location="6,9" Name="AverageTier" OnShow="parent.Casting.Top=59" PackSize="absolute,fixed" ScrollExtent="150,51" Size="150,51" Visible="false">
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="49,0" Name="Center" PackLocation="cfc,cfc" ScrollExtent="49,51" Size="49,51" SourceRect="50,187,99,238" SourceResource="images/widgets02.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Name="LeftCap" ScrollExtent="49,51" Size="49,51" SourceRect="1,187,49,238" SourceResource="images/widgets02.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="35,0" Name="LeftStretch" PackSize="absolute,fixed" ScrollExtent="15,51" Size="15,51" SourceRect="33,187,48,238" SourceResource="images/widgets02.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="97,0" Name="RightStretch" PackLocation="fff,top" PackSize="absolute,fixed" ScrollExtent="19,51" Size="19,51" SourceRect="101,187,120,238" SourceResource="images/widgets02.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="99,0" Name="RightCap" PackLocation="fff,top" ScrollExtent="50,51" Size="50,51" SourceRect="100,187,151,238" SourceResource="images/widgets02.dds" />
+        </Page>
+        <Page Location="0,9" Name="HeroicTier" OnShow="parent.Casting.Top=59" PackSize="absolute,fixed" ScrollExtent="163,50" Size="163,50" Visible="false">
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="53,0" Name="Center" PackLocation="cfc,cfc" ScrollExtent="52,50" Size="52,50" SourceRect="52,137,104,187" SourceResource="images/widgets02.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Name="LeftCap" ScrollExtent="39,50" Size="39,50" SourceRect="1,137,40,187" SourceResource="images/widgets02.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="38,0" Name="LeftStretch" PackSize="absolute,fixed" ScrollExtent="18,50" Size="18,50" SourceRect="40,137,51,187" SourceResource="images/widgets02.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="102,0" Name="RightStretch" PackLocation="fff,top" PackSize="absolute,fixed" ScrollExtent="26,50" Size="26,50" SourceRect="105,137,124,187" SourceResource="images/widgets02.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="127,0" Name="RightCap" PackLocation="fff,top" ScrollExtent="36,50" Size="36,50" SourceRect="124,137,160,187" SourceResource="images/widgets02.dds" />
+        </Page>
+        <Page Name="EpicTier" OnShow="parent.Casting.Top=59" PackSize="absolute,fixed" ScrollExtent="163,80" Size="163,80" Visible="false">
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="59,0" Name="Center" PackLocation="cfc,cfc" ScrollExtent="42,80" Size="42,80" SourceRect="58,3,100,83" SourceResource="images/widgets03.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Name="LeftCap" ScrollExtent="59,80" Size="59,80" SourceRect="0,3,59,83" SourceResource="images/widgets03.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="53,0" Name="LeftStretch" PackSize="absolute,fixed" ScrollExtent="10,57" Size="10,57" SourceRect="53,3,58,60" SourceResource="images/widgets03.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="98,0" Name="RightStretch" PackLocation="fff,top" PackSize="absolute,fixed" ScrollExtent="10,57" Size="10,57" SourceRect="53,3,58,60" SourceResource="images/widgets03.dds" />
+            <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="103,0" Name="RightCap" PackLocation="fff,top" ScrollExtent="60,80" Size="60,80" SourceRect="100,3,160,83" SourceResource="images/widgets03.dds" />
+        </Page>
+        <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="57,49" Name="Raid4" PackLocation="cfc,top" ScrollExtent="46,41" Size="46,41" SourceRect="165,132,211,173" SourceResource="images/widgets02.dds" />
+        <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="57,49" Name="Raid3" PackLocation="cfc,top" ScrollExtent="46,42" Size="46,42" SourceRect="209,88,255,130" SourceResource="images/widgets02.dds" />
+        <Image AbsorbsInput="false" AutoSize="true" BackgroundColor="#00FFFF" Location="57,49" Name="Raid2" PackLocation="cfc,top" ScrollExtent="44,42" Size="44,42" SourceRect="165,88,209,130" SourceResource="images/widgets02.dds" Visible="false" />
+    </Page>
+    <IconBank BackgroundOpacity="1.000" font="/TextStyles.Normal.NormalStyle" framecolor="#B5935A" iconframepadding="0" iconpadding="1" iconsize="15" iconstyle="/IconStyles.effect" Location="10,100" Name="Icons" PackSize="a,a" renderoutlines="false" ScrollExtent="163,50" Size="163,50" textcolor="#FFFFFF" textmargin="2,-1,2,-2" />
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="183,110" Size="183,110">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="183,110" Size="183,110" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="180,106" Size="180,106" />
+    </Page>
+</Page>

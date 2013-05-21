@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" Location="807,178" MaximumSize="2048,2048" MinimumSize="60,70" Name="Bag" PackLocation="left,bottom" ScrollExtent="179,70" Size="179,70" UserMovable="true" UserResizable="true" version="2.1" version_note="Replaced volume page continaing ">
+    <Button                        Location="124,3" Name="Salvage" OnPress="useability Salvage" PackLocation="right,top" PackSize="fixed,fixed" ScrollExtent="12,14" Size="14,14" Style="/ButtonStyles.single_pixel" Tooltip="Salvage">S</Button>
+    <Button IsDefaultButton="true" Location="143,3" Name="Transmute" OnPress="useability Transmute" PackLocation="right,top" PackSize="fixed,fixed" ScrollExtent="10,14" Size="14,14" Style="/ButtonStyles.single_pixel" Tooltip="Transmute!">T</Button>
+    <IconBank Dragable="true" font="/TextStyles.Normal.NormalStyle" framecolor="#B5935A" iconframepadding="0" iconpadding="1" iconsize="42" iconstyle="/IconStyles.examine" Location="3,21" Name="Icons" PackLocation="left,top" PackSize="a,a" renderframe="true" renderoutlines="false" ScrollExtent="172,44" Size="172,44" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="false" />
+    <Text Enabled="false" Font="/TextStyles.Normal.NormalStyle" Location="3,3" Margin="2,0,0,0" MaxLines="1" Name="Name" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="140,16" Size="140,16" TextAlignmentVertical="Center" TextColor="#FBF1D9" Tooltip=":f4ce1968dc90d15e_1:Bag">:f4ce1968dc90d15e:Bag</Text>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="179,68" Size="179,68">
+        <Button Location="138,7" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":f4ce1968ec278586:Window Settings" UserMovable="true" Visible="false" />
+        <Button Location="158,3" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":f4ce19682d3f513f:Close" UserMovable="true" />
+        <Page AbsorbsInput="false" Location="9,0" Name="RightGrouper" PackLocation="right,top" ScrollExtent="170,70" Size="170,70" Visible="false" />
+        <Page AbsorbsInput="false" Name="LeftGrouper" ScrollExtent="195,70" Size="195,70" Visible="false">
+            <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="65,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="65,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080" Visible="false" />
+        </Page>
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-2,-3" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="182,73" Size="182,73" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="A,F" ScrollExtent="174,19" Size="174,19" />
+    </Page>
+</Page>

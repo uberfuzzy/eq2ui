@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page Name="SkinInfoPage" ScrollExtent="800,600" Size="800,600" Visible="false">
+<Data author="EQ2Interface" contact="http://www.eq2interface.com" description="The Everquest 2 Modular Atlas Project" Name="SkinInfo" text="EQ2MAP" version="2.0"/>
+</Page>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="460,611" MinimumSize="90,30" Name="Clock" PackLocation="right,bottom" ScrollExtent="90,36" Size="90,36" UserMovable="true" version="1.0.1" version_note="AbsorbsInput=false everywhere">
+    <Text AbsorbsInput="false" Font="/TextStyles.ArialLarge.ArialLargeStyle" Location="1,0" Name="Earth" ScrollExtent="44,21" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="44,21" TextAlignment="Center" TextAlignmentVertical="Center">Earth </Text>
+    <Text AbsorbsInput="false" DynamicData="/GameData.General.EarthTime" Font="/TextStyles.ArialLarge.ArialLargeStyle" Location="44,1" Name="ETime" ScrollExtent="45,18" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="45,18" TextAlignment="Center" TextAlignmentVertical="Center">00:00 PM</Text>
+    <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" Location="1,22" Name="Norrath" ScrollExtent="38,14" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="38,14" TextAlignment="Center" TextAlignmentVertical="Center">Norrath:</Text>
+    <Text AbsorbsInput="false" DynamicData="/GameData.General.Time" Font="/TextStyles.Small.SmallStyle" Location="41,22" Name="NTime" ScrollExtent="48,14" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="48,14" TextAlignment="Center" TextAlignmentVertical="Center">00:00 PM</Text>
+    <Page AbsorbsInput="false" Name="WindowFrame" ScrollExtent="90,36" Size="90,36">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="90,36" Size="90,36" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="90,36" Size="90,36" />
+    </Page>
+</Page>
