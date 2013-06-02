@@ -1,10 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page BackgroundColor="#00FF00" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="341,250" Name="Shutdown" PackLocation="center,center" ScrollExtent="354,233" Size="354,233" UserMovable="true">
-    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="354,237" Size="354,237">
-        <Button Location="296,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":7dd2e4e9ec278586:Window Settings" UserMovable="true" />
-        <Button Location="301,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":7dd2e4e9574a0c6d:Help" UserMovable="true" Visible="false" />
-        <Button Location="318,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":7dd2e4e92d3f513f:Close" UserMovable="true" />
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="184,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+<Page BackgroundColor="#00FF00" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="341,250" Name="Shutdown" PackLocation="center,center" ScrollExtent="328,215" Size="328,215" UserMovable="true">
     <Button BackgroundTint="#D8D800" Location="20,35" Name="CampToCharSelect" ScrollExtent="90,30" Size="90,30" Style="/CommonElements.PushButton.data.style" Tooltip=":7dd2e4e99a9c2d1b:/camp">to Select</Button>
     <Button BackgroundTint="#0FFF0F" Location="115,35" Name="CampToDesktop" ScrollExtent="90,30" Size="90,30" Style="/CommonElements.PushButton.data.style" Tooltip=":7dd2e4e913d22424:/camp desktop">to Desktop</Button>
     <Button BackgroundTint="#0FFF0F" Location="210,35" Name="CampToLogin" OnPress="camp login" ScrollExtent="90,30" Size="90,30" Style="/CommonElements.PushButton.data.style" Tooltip="/camp login">to Login</Button>
@@ -18,10 +13,15 @@
     <Button BackgroundTint="#D8D800" Location="210,115" Name="Toon7" OnPress="camp Nilknarf" ScrollExtent="90,27" Size="90,27" Style="/CommonElements.SmallPushButton.data.style">Nilknarf</Button>
     <Button BackgroundTint="#D8D800" Location="210,140" Name="Toon8" OnPress="camp Dahrow" ScrollExtent="90,27" Size="90,27" Style="/CommonElements.SmallPushButton.data.style">Dahrow</Button>
     <Button BackgroundTint="#D8D800" Location="210,165" Name="Toon9" OnPress="camp -" ScrollExtent="92,27" Size="92,27" Style="/CommonElements.SmallPushButton.data.style" Visible="false">?</Button>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="328,219" Size="328,219">
+        <Button Location="270,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":7dd2e4e9ec278586:Window Settings" UserMovable="true" />
+        <Button Location="275,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":7dd2e4e9574a0c6d:Help" UserMovable="true" Visible="false" />
+        <Button Location="292,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":7dd2e4e92d3f513f:Close" UserMovable="true" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="158,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
         <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
             <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:7dd2e4e99e5912f1:Camp</Text>
         </Page>
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="354,237" Size="354,237" />
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="354,237" Size="354,237" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="328,219" Size="328,219" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="328,219" Size="328,219" />
     </Page>
 </Page>
