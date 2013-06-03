@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" Location="558,117" MaximumSize="1000,1000" MinimumSize="346,250" Name="Loot" ScrollExtent="346,250" Size="346,250" UserMovable="true" UserResizable="true" version="2.0.0">
-    <Button Location="10,28" MaximumSize="16384,38" MinimumSize="75,27" Name="autoLoot" OnPress="setautolootmode 1" PackLocation="cfc,bottom" ScrollExtent="75,27" Size="75,27" Style="/CommonElements.SmallPushButton.data.style">AutoLoot</Button>
+    <Button Location="10,28" MaximumSize="16384,38" MinimumSize="75,27" Name="autoLoot" OnPress="setautolootmode 1" ScrollExtent="75,27" Size="75,27" Style="/CommonElements.SmallPushButton.data.style">AutoLoot</Button>
     <Page Location="8,23" Name="Items" PackSize="a,a" ScrollExtent="330,157" Size="330,157">
         <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" HideIfUnnecessary="true" Location="298,30" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,117" Size="22,117" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
         <Page AbsorbsInput="false" Location="10,30" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="310,117" ScrollSize="1,44" Size="310,117">
