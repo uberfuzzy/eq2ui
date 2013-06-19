@@ -15,3 +15,6 @@ I'll do my best to setup some sort "stable" or "production" branch, and these wo
 Some of these I made from scratch (well, from the game's base).
 
 Some of these are from EQ2interface.com (some modified further, some used straight up), I make no claim to own them, and make no warranty on their copy here. I'll do my best to label these, and link to the EQ2interface entry for them.
+
+
+* Pet - [[DrumsUI] Pet](http://www.eq2interface.com/downloads/info4812-DrumsUIPet.html)
