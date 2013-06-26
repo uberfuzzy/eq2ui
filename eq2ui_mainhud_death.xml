@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page allowcloseontop="false" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="308,129" MaximumSize="16384,420" MinimumSize="380,350" Name="Death" PackLocation="center,top" ScrollExtent="381,358" ShowSound="war_drum" Size="381,358" UserMovable="true" UserResizable="true">
+    <Text AbsorbsInput="false" Font="/TextStyles.Death.DeathStyle" Location="44,18" Name="Title" PackLocation="cfc,top" ScrollExtent="305,58" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="305,58" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FFB164" UserMovable="true" UserResizable="true">:5d1d56c3b3799205:YOU HAVE DIED</Text>
+    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,83" Margin="1,1,1,1" Name="Prompt" PackLocation="cfc,top" ScrollExtent="285,54" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="285,54" TextAlignment="Center" TextColor="#FBF1DD" UserMovable="true" UserResizable="true" Visible="false">:5d1d56c3a1ae8cb8:You may either wait for a player to resurrect you, or select a location to revive from.</Text>
+    <Page AbsorbsInput="false" Location="22,69" Name="RespawnLocations" PackSize="a,a" ScrollExtent="335,195" Size="335,195">
+        <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,0" Name="Title" PackLocation="cfc,top" ScrollExtent="275,22" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="275,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9" UserMovable="true" UserResizable="true">:5d1d56c360784b89:Revive Locations</Text>
+        <Composite Location="10,35" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="315,195" Size="315,195" SpacingType="Fill">
+            <List BackgroundColor="#000000" BackgroundOpacity="0.000" DataSource="JunctionSource" MinimumScrollExtent="315,85" Name="JunctionList" PackSize=",a" ScrollExtent="315,245" SelectionAllowedMultiRow="false" Size="315,245" Style="list_style" />
+            <Scrollbar ArrowPressSound="sounds/button" Control="JunctionList" HideIfUnnecessary="true" Location="293,0" MaximumSize="22,16384" MinimumSize="22,80" Name="JunctionScroll" PackSize=",a" ScrollExtent="22,245" Size="22,245" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+        </Composite>
+        <DataSource Name="JunctionSource">
+            <Data Name="Reply 1" text=":5d1d56c3813857c3:This is reply choice number 1" />
+            <Data Name="Reply 1" text=":5d1d56c3813857c3_1:This is reply choice number 1" />
+            <Data Name="Reply 1" text=":5d1d56c3813857c3_2:This is reply choice number 1" />
+            <Data Name="Reply 1" text=":5d1d56c3813857c3_3:This is reply choice number 1" />
+            <Data Name="Reply 1" text=":5d1d56c3813857c3_4:This is reply choice number 1" />
+        </DataSource>
+        <ListStyle CellPadding="0,1" DefaultTextStyle="/TextStyles.Normal.NormalStyle" Name="list_style" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" />
+        <Page BackgroundOpacity="1.000" Location="0,20" Name="Grouper" PackSize="a,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="335,179" Size="335,179" />
+    </Page>
+    <Button Location="49,285" MaximumSize="16384,38" MinimumSize="38,38" Name="Respawn" PackLocation="cfc,bottom" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style">:5d1d56c313464bd5:Revive</Button>
+    <Page Location="214,274" MaximumSize="142,57" MinimumSize="142,57" Name="PonPage" ScrollExtent="142,57" Size="142,57">
+        <Text Font="/TextStyles.Large.LargeStyle" Location="12,8" Name="Label" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" PackLocation="right,top" PackSize="f,f" ScrollExtent="76,41" Size="76,41" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3dd392e8ff2aad96:Revive Instantly!</Text>
+        <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="126,42" Name="Coin" PackLocation="right,top" PackSize="f,f" ScrollExtent="12,12" Size="12,12" Style="/imagelist.coins.StationCash" />
+        <Image DynamicData="/GameData.UIState.NameSpace.PSG" Location="126,42" Name="Coin" PackLocation="right,top" PackSize="f,f" ScrollExtent="12,12" Size="12,12" Style="/imagelist.coins.SevenCash" />
+        <Text Font="/TextStyles.Normal.NormalStyle" Location="73,40" Name="SCCostText" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" PackLocation="right,top" PackSize="f,f" ScrollExtent="49,16" Size="49,16" TextAlignment="Right" TextAlignmentVertical="Center">:3dd392e8928c6a9d:1,000</Text>
+        <Button Location="90,-1" Name="SCReviveButton" RStyleDefault="sc_pon" ScrollExtent="50,41" Size="50,41" Style="/ButtonStyles.sc_pon" Tooltip=":3dd392e8e4061021:Instantly revive where you stand" />
+    </Page>
+    <Page BackgroundOpacity="0.600" Location="18,20" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="345,318" Size="345,318" />
+    <Page BackgroundOpacity="1.000" Location="-12,-10" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="405,378" Size="405,378" />
+</Page>
